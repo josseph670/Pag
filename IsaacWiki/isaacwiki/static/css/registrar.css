@@ -1,0 +1,90 @@
+/* Estilos para el formulario de registro */
+
+/* Contenedor principal del formulario */
+#form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+#form-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para los campos del formulario */
+#form-container form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para las etiquetas de los campos */
+#form-container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para los inputs */
+#form-container form input[type="text"],
+#form-container form input[type="password"],
+#form-container form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilos para el botón de enviar */
+#form-container form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el botón de enviar al pasar el ratón */
+#form-container form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Estilos para mensajes de error */
+#form-container .bg-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 6px 12px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Estilos para mensajes de éxito */
+#form-container .bg-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 6px 12px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Estilos para el contenedor de mensajes */
+#form-container .form-group {
+    margin-bottom: 20px;
+}

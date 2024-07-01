@@ -1,0 +1,12 @@
+{% extends 'Registro/base.html'%}
+
+{% block contenido %}
+    <div class="text-center">
+        <form method="post">
+            {% csrf_token %}
+            <p class="delete-msg">Estas seguro que deseas borrar el trinket "{{ trinket.nombre }}"?</p>
+            <a href="{% url 'listar_trinket' %}" class="btn btn-secondary">NO</a>
+            <button class="btn btn-primary" type="submit">Si</button>
+        </form>
+    </div>
+{% endblock %}

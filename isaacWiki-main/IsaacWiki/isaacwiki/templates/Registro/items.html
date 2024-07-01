@@ -1,0 +1,88 @@
+<head>
+<title>Objetos de The Binding of Isaac</title>
+		<!-- Integraciones de Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E">
+		{% extends 'Registro/base.html'%}
+		{% load static%} 
+		{% block css%}
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style_items.css' %}">
+		{% endblock %}
+</head>
+{% block contenido%}
+<body>
+	<h1>Objetos de The Binding of Isaac</h1>
+	<table>
+		<tr>
+			<th>Objeto</th>
+			<th>Imagen</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>Magic Mushroom</td>
+			<td><img src="{% static 'img/items/Collectible_Magic_Mushroom_Icon.webp' %}" alt="Magic Mushroom" class="img-fluid"></td>
+			<td>Hace a Isaac más grande. Da un contenedor de vida roja, Estadística + 0.3 Daño, Estadística × 1.5 Daño, Estadística + 5.25 Rango y Estadística + 0.3 Velocidad. Cura toda la vida roja al recogerlo.</td>
+        </tr>
+		<tr>
+			<td>Sacred Heart</td>
+			<td><img src="{% static 'img/items/Objeto_Sagrado_corazon.webp' %}" alt="Sacred Heart" class="img-fluid"></td>
+			<td>Da Estadística × 2.3 Daño, un aumento plano de Estadística + 1 Daño, Estadística Rango.png + 4.125 Rango, +0.75 de altura de lágrima, Estadística - 0.4 Lágrimas, Estadística Velocidad del - 0.25 Velocidad del proyectil, un contenedor de vida roja y cura toda la vida roja. Las lágrimas también seguirán a los enemigos.</td>
+		</tr>
+		<tr>
+			<td>Parasitoid</td>
+			<td><img src="{% static 'img/items/Objeto_Parasitoide.webp' %}" alt="Parasitoid" class="img-fluid"></td>
+			<td>
+				Las lágrimas pueden ser sacos de huevos que crean creep que ralentiza y generan una mosca azul o araña azul al golpear a un enemigo.
+			</td>
+        </tr>
+        <tr>
+            <td>Brimstone</td>
+            <td><img src="{% static 'img/items/Objeto_Azufre.webp' %}" alt="Brimstone" class="img-fluid"></td>
+            <td>Las lágrimas son reemplazadas por un rayo láser que atraviesa a todos los enemigos y obstáculos en su camino y causa mucho daño. Necesita ser cargado. Es un tipo de lagrima que te lo atribuyen varios objetos, normalmente dados por el diablo mediante pactos de vida.</td>
+        </tr>
+        <tr>
+            <td>Mutant Spider</td>
+            <td><img src="{% static 'img/items/Objeto_Arana_Mutante.webp' %}" alt="Mutant Spider" class="img-fluid"></td>
+            <td>Da disparo cuádruple pero disminuye la cadencia. </td>
+        </tr>
+        <tr>
+            <td>Soy milk</td>
+            <td><img src="{% static 'img/items/Objeto_Leche_De_Soya.webp' %}" alt="Soy milk" class="img-fluid"></td>
+            <td>Las lágrimas serán más pequeñas y harán mucho menos daño, pero aumenta mucho la cadencia.
+
+			</td>
+        </tr>
+		<tr>
+			<td>Tech X</td>
+			<td><img src="{% static 'img/items/Objeto_Tech_X.webp' %}" alt="Tech X" class="img-fluid"></td>
+			<td>Las lágrimas son reemplazadas por anillos láser que pasan a través de los enemigos y obstáculos. Puede ser cargado para lanzar un anillo más grande.</td>
+		</tr>
+		<tr>
+			<td>The Wiz</td>
+			<td><img src="{% static 'img/items/Objeto_El_Genio.webp' %}" alt="The Wiz" class="img-fluid"></td>
+			<td>Dispara lágrimas diagonalmente de ambos ojos a la vez y te agrega un cono con la palabra "DUNCE" escrita en el</td>
+		</tr>
+		<tr>
+			<td>The D6</td>
+			<td><img src="{% static 'img/items/Objeto_El_D6.webp' %}" alt="The D6" class="img-fluid"></td>
+			<td>The El D6 es un objeto activable el cual cambia los objetos de la habitación actual por otros objetos de la fuente de obtención de objetos de la misma habitación,</td>
+        </tr>
+        <tr>
+            <td>Mama mega!</td>
+            <td><img src="{% static 'img/items/Objeto_Mama.Mega.webp' %}" alt="Mama mega!" class="img-fluid"></td>
+            <td>Mama mega es un objeto activavle el cual hace daña a todos los enemigos y destruye todos los obstáculos. El efecto se activa cada vez que se entra en una nueva habitación durante el piso actual.</td>
+        </tr>
+		<tr>
+			<td>Steam Sale</td>
+			<td><img src="{% static 'img/items/Objeto_Rebajas_De_Steam.webp' %}" alt="Steam sale" class="img-fluid"></td>
+			<td>Reduce todos los precios de la tienda a la mitad.</td>
+		</tr>
+		<tr>
+			<td>Mom's Knife</td>
+			<td><img src="{% static 'img/items/Objeto_Moms_Knife.png' %}" alt="Mom's Knife" class="img-fluid"></td>
+			<td>Es un ítem el cual te proporciona, reemplaza tus lágrimas por un cuchillo arrojadizo que mientras más lo cargues más lejos llegara el cual hace una cantidad considerable de daño.</td>
+		</tr>
+	</table>
+</body>
+</html>
+{% endblock %}

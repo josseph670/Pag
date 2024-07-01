@@ -1,0 +1,253 @@
+a {
+  padding: 0;
+}
+*{
+  margin: 0;
+}
+.d-block img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand {
+  padding: 1rem;
+}
+/* Estilos para el menú de navegación */
+.navbar {
+  background-color: #220000!important; /* Cambia el color de fondo del menú */
+  z-index: 9999;
+}  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-dark {
+    background-color: #3e4648; /* Cambia el color de fondo del menú a rojo */
+  }
+
+  .navbar-nav {
+    margin: 0 auto; /* margen izquierdo y derecho automáticos */
+    display: flex;
+    justify-content: center; /* centrar los elementos */
+  }
+  
+  .nav-item {
+    margin-right: 1rem; /* espacio entre elementos */
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para la cabecera */
+  .header {
+    background-color: #f9f9f9;
+    padding: 120px 0;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+
+  
+  main {
+    padding-top: 80px;
+  }
+  
+/* Estilos para el boton de login */
+  .btn-login {
+    background-color: #2C2B2B; /* color de fondo */
+    color: white; /* color del texto */
+    border: none; /* borde sin estilo */
+    border-radius: 20px; /* radio del borde */
+    padding: 8px 16px; /* espacio interno */
+    font-size: 14px; /* tamaño del texto */
+    text-transform: uppercase; /* texto en mayúsculas */
+    letter-spacing: 1px; /* espacio entre letras */
+    font-weight: bold; /* peso del texto */
+  }
+  
+  .btn-login:hover {
+    background-color: #3e8e41; /* color de fondo al pasar el mouse */
+    color: white; /* color del texto al pasar el mouse */
+  }
+  
+
+
+
+/* Estilos del carrusel */
+.carousel-item img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Espacio adicional en la parte inferior para el carrusel */
+.spacer {
+  height: 100px;
+}
+
+.carousel-item img {
+  height: 500px; /* Cambia la altura de las imágenes */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #FFA500; /* Cambia el color de las flechas */
+}
+
+.carousel-indicators li {
+  background-color: #F2F2F2; /* Cambia el color de fondo de los indicadores */
+}
+
+.carousel-indicators .active {
+  background-color: #FFA500; /* Cambia el color de fondo del indicador activo */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Mostrar texto con el cursor */
+
+.carousel-item {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.carousel-item:hover .caption {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Estilos para los botones */
+
+.btn-prev,
+.btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-prev {
+  left: 0;
+}
+
+.btn-next {
+  right: 0;
+}
+    
+  /* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 992px) {
+    .navbar {
+      height: 80px;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+  
+  /* Estilos para tabletas */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+      height: 70px;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      font-size: 1.1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  /* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 992px) {
+    .navbar {
+      height: 80px;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+  
+  /* Estilos para tabletas */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+      height: 70px;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      font-size: 1.1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      flex-direction: column; /* Cambia la dirección del flex a columna */
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 0; /* Elimina el margen derecho */
+    }
+  }
+
+  /* Estilos para pantallas de escritorio */
+.carousel-item {
+    max-height: 500px;
+  }
+  
+  /* Estilos para tabletas */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item {
+      max-height: 400px;
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    .carousel-item {
+      max-height: 300px;
+    }
+  }
+  
+  

@@ -1,0 +1,56 @@
+{% extends 'Registro/base.html'%}
+
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{%block js%}
+<script src="{% static 'js/script.js' %}"></script>
+{%endblock%}
+
+
+{% block contenido%}
+<header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+        <h1>Bienvenido a la wiki de The Binding of Isaac  </h1>
+        <p>Recopilacion de informacion sobre personajes,jefes y objetos</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{% url 'items' %}"><img src="{% static 'img/imagenes_vicente/objetos.png' %}" class="d-block w-100" alt="..."></a>
+      
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'bosses' %}"><img src="{% static 'img/imagenes_vicente/Versus.png' %}"  class="d-block w-100" alt="..."></a>
+      
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'personajes' %}"><img src="{% static 'img/imagenes_vicente/Personajes2.jpg' %}"  class="d-block w-100" alt="..."></a>
+      
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<div class="spacer"></div>
+
+{% endblock %}

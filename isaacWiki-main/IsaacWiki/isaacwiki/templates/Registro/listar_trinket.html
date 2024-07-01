@@ -1,0 +1,35 @@
+{% extends 'Registro/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style_trinket.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block contenido %}
+    <div class="content container">
+        <div class="rectangle">
+            <title>Listar trinket</title>
+            <h2 class="centered-title">Lista de trinkets</h2>
+            <div class="spacer"></div> <!-- Agregamos un espacio -->
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+                {% for trinket in object_list %}
+                    <tr>
+                        <td>{{ trinket.nombre }}</td>
+                        <td>{{ trinket.descripcion }}</td>
+                        <td class="text-center">{{ trinket.categoria }}</td>
+                        <td class="action-buttons">
+                            <a href="{% url 'modificar_trinket' trinket.id %}" class="btn btn-modificar">Modificar</a>
+                            <a href="{% url 'eliminar_trinket' trinket.id %}" class="btn btn-eliminar">Eliminar</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

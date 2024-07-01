@@ -1,0 +1,21 @@
+{% extends 'tienda/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" href="{% static 'css/registrar.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<div class="content container" style="margin-top: 50px;">
+    <div id="form-container">
+        <h1 class="text-center">Registrar</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

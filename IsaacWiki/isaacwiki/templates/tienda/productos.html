@@ -1,0 +1,108 @@
+{% extends 'tienda/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="{% url 'achoclonados' %}" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/Achoclonados.jpg' %}" alt="Achoclonados">
+                <div class="card-body">
+                    <h4 class="card-title">Achoclonados</h4>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        10min - 15min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#!" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/Cheeseburger.jpg' %}" alt="Lunnas">
+                <div class="card-body">
+                    <h4 class="card-title">Lunnas</h4>
+                    <h5> Cerrado </h5>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        5min - 10min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#!" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/handrolls.jpg' %}" alt="Midori Sushi Fusion">
+                <div class="card-body">
+                    <h4 class="card-title">Midori Sushi Fusion</h4>
+                    <h5> Cerrado </h5>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        8min - 15min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#!" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/Completo.jpg' %}" alt="Italiano Veloz">
+                <div class="card-body">
+                    <h4 class="card-title">Italiano Veloz</h4>
+                    <h5> Cerrado </h5>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        Instantáneo<br>
+                        Tiempo de espera en fila:<br>
+                        20min - 30min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="{% url 'relativo' %}" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/Relativo.jpg' %}" alt="Relativo">
+                <div class="card-body">
+                    <h4 class="card-title">Relativo</h4>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        20min - 30min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="#!" class="card-link">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'img/Pizza.jpg' %}" alt="Freddy Fazbear">
+                <div class="card-body">
+                    <h4 class="card-title">Freddy Fazbear</h4>
+                    <h5> Cerrado </h5>
+                    <p class="card-text">
+                        Tiempo de espera:<br>
+                        5min - 15min
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

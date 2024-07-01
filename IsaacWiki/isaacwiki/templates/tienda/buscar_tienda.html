@@ -1,0 +1,99 @@
+{% extends "tienda/base.html" %}
+
+{% block contenido %}
+<div class="container mt-5">
+    <h2>Buscar Tienda</h2>
+    <form method="get" action="{% url 'buscar_tienda' %}">
+        <div class="form-group">
+            <input type="text" name="q" class="form-control" placeholder="Buscar por nombre de tienda">
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+
+    {% if tienda %}
+    <div class="row mt-4">
+        <!-- Columna para Editar Tienda -->
+        <div class="col-md-6">
+            <h3>{{ tienda.nombre }}</h3>
+            <p>{{ tienda.descripcion }}</p>
+
+            <h4>Editar Tienda</h4>
+            <form method="post" action="{% url 'modificar_tienda' tienda.pk %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ tienda_form.as_p }}
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            </form>
+        </div>
+
+        <!-- Columna para Productos -->
+        <div class="col-md-6">
+            <h4>Productos</h4>
+            <ul>
+                {% for producto in productos %}
+                <li>
+                    {{ producto.nombre }} - {{ producto.precio }}
+                    <a href="#" class="btn btn-sm btn-primary btn-editar-producto" data-id="{{ producto.pk }}" data-toggle="modal" data-target="#modalEditarProducto">Editar</a>
+                    <a href="#" class="btn btn-sm btn-danger btn-eliminar-producto" data-id="{{ producto.pk }}" data-toggle="modal" data-target="#modalEliminarProducto">Eliminar</a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <h4>Agregar Producto</h4>
+            <form method="post" action="{% url 'agregar_producto' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ producto_form.as_p }}
+                <button type="submit" class="btn btn-primary">Agregar Producto</button>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Modal para Editar Producto -->
+<div class="modal fade" id="modalEditarProducto" tabindex="-1" role="dialog" aria-labelledby="modalEditarProductoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEditarProductoLabel">Editar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulario para editar producto -->
+                <form id="formEditarProducto" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="producto_id" id="producto_id">
+                    {{ producto_form.as_p }}
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Confirmar Eliminar Producto -->
+<div class="modal fade" id="modalEliminarProducto" tabindex="-1" role="dialog" aria-labelledby="modalEliminarProductoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEliminarProductoLabel">Confirmar Eliminación</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás seguro de que quieres eliminar este producto?</p>
+            </div>
+            <div class="modal-footer">
+                <form id="formEliminarProducto" method="post" action="">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

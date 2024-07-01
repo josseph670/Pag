@@ -1,0 +1,88 @@
+
+
+#registro {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+#registro h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los campos del formulario */
+#registro form {
+    width: 100%;
+}
+
+/* Estilos para las etiquetas de los campos */
+#registro form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para los inputs */
+#registro form input[type="text"],
+#registro form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Estilos para el botón de enviar */
+#registro form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el botón de enviar al pasar el ratón */
+#registro form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para mensajes de error */
+#registro .bg-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 6px 12px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Estilos para mensajes de éxito */
+#registro .bg-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 6px 12px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Estilos para el contenedor de mensajes */
+#registro .form-group {
+    margin-bottom: 20px;
+}

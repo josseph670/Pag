@@ -1,0 +1,30 @@
+<!-- templates/tienda/tiendas.html -->
+{% extends "tienda/base.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+{% endblock %}
+{% block contenido %}
+
+<body>
+<div class="container mt-5">
+    <div class="row" style="margin-top: 100px;">
+        {% for tienda in tiendas %}
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ tienda.imagen.url }}" class="card-img-top" alt="{{ tienda.nombre }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ tienda.nombre }}</h5>
+                    <p class="card-text">{{ tienda.descripcion|truncatewords:20 }}</p> 
+                    <p>Estado: {{ tienda.get_estado_display }}</p>
+                    <p>Tiempo de espera: {{ tienda.tiempo_espera_min }} - {{ tienda.tiempo_espera_max }} minutos</p>
+                    <a href="{% url 'detalle_tienda' tienda.pk %}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+{% endblock %}

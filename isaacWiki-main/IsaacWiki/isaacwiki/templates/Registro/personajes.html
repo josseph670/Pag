@@ -1,0 +1,119 @@
+<head>
+<title>Personajes de The Binding of Isaac</title>
+		<!-- Integraciones de Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E">
+		{% extends 'Registro/base.html'%}
+		{% load static%} 
+		{% block css%}
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style_personajes.css' %}">
+		{% endblock %}
+</head>
+{% block contenido%}
+<body>
+	<h1>Personajes de The Binding of Isaac</h1>
+	<table>
+		<tr>
+			<th>Personaje</th>
+			<th>Imagen</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>Issac</td>
+			<td><img src="{% static 'img/personajes/isaac.png' %}" alt="Isaac" class="img-fluid"></td>
+			<td>Isaac es el personaje principal de The Binding of Isaac. Comienza con una sola lágrima y un contenedor de salud. A medida que avanza en el juego, puede tomar objetos que le otorgan habilidades especiales, como disparos de lágrima adicionales, vuelo, invencibilidad temporal y más.</td>
+		</tr>
+		<tr>
+			<td>Magdalena</td>
+			<td><img src="{% static 'img/personajes/Magdalena.png' %}" alt="Magdalena" class="img-fluid"></td>
+			<td>Magdalena es un personaje desbloqueable en The Binding of Isaac. Comienza con un contenedor de salud adicional y un objeto llamado "Biblia de Magdalena", que puede usarse para obtener una vida extra. También puede tomar objetos que le otorgan habilidades especiales.</td>
+		</tr>
+		<tr>
+			<td>Caín</td>
+			<td><img src="{% static 'img/personajes/Cain.png' %}"alt="Caín" class="img-fluid"></td>
+			<td>Caín es un personaje desbloqueable en The Binding of Isaac. Comienza con un objeto llamado "Pieza de la llave de Caín", que le otorga un cofre al final de cada piso. También tiene más suerte al abrir cofres, pero comienza con menos salud.</td>
+        </tr>
+        <tr>
+            <td>Judas</td>
+            <td><img src="{% static 'img/personajes/Judas.png' %}" alt="Judas" class="img-fluid"></td>
+            <td>Judas es un personaje desbloqueable en The Binding of Isaac. Comienza con el objeto "Libro de Belial", que aumenta el daño infligido por un piso. También tiene un contenedor de salud, pero comienza con solo un corazón rojo.</td>
+        </tr>
+        <tr>
+            <td>???</td>
+            <td><img src="{% static 'img/personajes/The_poop.png' %}" alt="???" class="img-fluid"></td>
+            <td>??? es un personaje desbloqueable en The Binding of Isaac. Comienza con tres contenedores de alma, pero no puede recoger corazones rojos. Puede obtener habilidades especiales a través de objetos.</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td><img src="{% static 'img/personajes/Eve.png' %}"alt="Eve" class="img-fluid"></td>
+            <td>Eve es un personaje desbloqueable en The Binding of Isaac. Comienza con el objeto "La manzana de Adán", que le otorga un contenedor de alma y un contenedor de corazón vacío. A medida que su salud disminuye, su daño aumenta.</td>
+        </tr>
+		<tr>
+			<td>Samson</td>
+			<td><img src="{% static 'img/personajes/Samson.png' %}" alt="Samson" class="img-fluid"></td>
+			<td>Samson es un personaje desbloqueable en The Binding of Isaac. Comienza con el objeto "Cabello Sangriento", que aumenta su daño por cada enemigo asesinado en una habitación. También comienza con un contenedor de corazón adicional.</td>
+		</tr>
+		<tr>
+			<td>Azazel</td>
+			<td><img src="{% static 'img/personajes/Azazel.png' %}" alt="Azazel" class="img-fluid"></td>
+			<td>Azazel es un personaje desbloqueable en The Binding of Isaac. Comienza con el objeto "Tecnología de Brimstone", que le permite disparar un rayo láser rojo. También tiene alas, que le permiten volar sobre agujeros y obstáculos.</td>
+		</tr>
+		<tr>
+			<td>Lazarus</td>
+			<td><img src="{% static 'img/personajes/Lazarus.png' %}" alt="Lazarus" class="img-fluid"></td>
+			<td>Lazarus es un personaje desbloqueable en The Binding of Isaac. Comienza con un contenedor de corazón y un contenedor de alma, pero cuando muere se revive con solo un contenedor de corazón. Puede obtener habilidades especiales a través de objetos.</td>
+        </tr>
+        <tr>
+            <td>Eden</td>
+            <td><img src="{% static 'img/personajes/Eden.png' %}" alt="Eden" class="img-fluid"></td>
+            <td>Eden es un personaje desbloqueable en The Binding of Isaac. Comienza con dos objetos aleatorios y estadísticas aleatorias. No tiene corazones rojos, solo corazones de alma, lo que significa que no puede obtener corazones de contenedor rojos. Puede ser un personaje difícil de manejar, pero también puede tener combinaciones de objetos poderosas.</td>
+        </tr>
+		<tr>
+			<td>The Lost</td>
+			<td><img src="{% static 'img/personajes/The_Lost.png' %}" alt="The Lost" class="img-fluid"></td>
+			<td>The Lost es un personaje secreto en The Binding of Isaac. Comienza con ningún corazón y no puede tener ningún tipo de corazón (rojo, azul o negro) como contenedor de salud. Sin embargo, tiene la habilidad de volar y puede tomar objetos que le otorgan habilidades especiales.</td>
+		</tr>
+		<tr>
+			<td>Lilith</td>
+			<td><img src="{% static 'img/personajes/Lilith.png' %}" alt="Lilith" class="img-fluid"></td>
+			<td>Lilith es un personaje desbloqueable en The Binding of Isaac: Rebirth. Comienza con un objeto llamado "Incubus", que copia los disparos de lágrima de Lilith. También tiene la habilidad de volar y puede tomar objetos que le otorgan habilidades especiales.</td>
+		</tr>
+		<tr>
+			<td>Keeper</td>
+			<td><img src="{% static 'img/personajes/Keeper.png' %}"alt="Keeper" class="img-fluid"></td>
+			<td>Keeper es un personaje desbloqueable en The Binding of Isaac: Afterbirth. Comienza con dos contenedores de salud (monedas) y un objeto llamado "Madera de la Tienda", que puede recuperar salud al dejar caer monedas en una máquina expendedora. También tiene la habilidad de volar y puede tomar objetos que le otorgan habilidades especiales.</td>
+		</tr>
+		<tr>
+			<td>Apollyon</td>
+			<td><img src="{% static 'img/personajes/Apollyon.png' %}" alt="Apollyon" class="img-fluid"></td>
+			<td>Apollyon es un personaje desbloqueable en The Binding of Isaac: Afterbirth+. Comienza con el objeto Void, que puede absorber otros objetos activos y convertirlos en estadísticas. También comienza con un objeto pasivo aleatorio. Sus estadísticas son promedio, pero su capacidad de convertir objetos activos lo hace muy versátil.</td>
+		</tr>
+		<tr>
+			<td>Forgotten</td>
+			<td><img src="{% static 'img/personajes/The_Forgotten.png' %}" alt="Forgotten" class="img-fluid"></td>
+			<td>Forgotten es un personaje desbloqueable en The Binding of Isaac: Repentance. Tiene dos formas: una forma de esqueleto y una forma de alma. En su forma de esqueleto, usa un hueso como arma y puede lanzar su cabeza como un objeto activo. En su forma de alma, vuela y puede atacar con lágrimas. Cambiar entre las formas consume corazones de alma.</td>
+		</tr>
+		<tr>
+			<td>The Soul</td>
+			<td><img src="{% static 'img/personajes/The_Soul.png' %}" alt="The Soul" class="img-fluid"></td>
+			<td>The Soul es un personaje desbloqueable en The Binding of Isaac: Repentance. Comienza con el objeto Anima Sola, que se carga cuando se recogen monedas y puede usarse para invocar a un familiar que dispara lágrimas y dañar a los enemigos. También comienza con tres corazones de alma. Sus estadísticas son promedio.</td>
+		</tr>
+		<tr>
+			<td>Bethany</td>
+			<td><img src="{% static 'img/personajes/Bethany.png' %}"alt="Bethany" class="img-fluid"></td>
+			<td>Bethany es un personaje desbloqueable en The Binding of Isaac: Repentance. Comienza con el objeto Book of Virtues, que puede crear un halo de luz alrededor del personaje que inflige daño a los enemigos. También comienza con tres corazones rojos. Sus estadísticas son promedio.</td>
+		</tr>
+		<tr>
+			<td>Jacob</td>
+			<td><img src="{% static 'img/personajes/Jacob.png' %}" alt="Jacob" class="img-fluid"></td>
+			<td>Jacob es un personaje desbloqueable en The Binding of Isaac: Repentance. Controlas a dos personajes a la vez: Jacob, que tiene estadísticas de lágrimas altas y poca salud Los personajes se pueden separar temporalmente y controlar individualmente. Sin embargo, si uno de ellos muere, el otro también muere.</td>
+		</tr>
+		<tr>
+			<td>Esau</td>
+			<td><img src="{% static 'img/personajes/Esau.png' %}" alt="Esau" class="img-fluid"></td>
+			<td>Esau es un personaje desbloqueable en The Binding of Isaac: Repentance. Controlas a dos personajes a la vez: Esau, que tiene estadísticas de lágrimas bajas y mucha salud. Los personajes se pueden separar temporalmente y controlar individualmente. Sin embargo, si uno de ellos muere, el otro también muere.</td>
+		</tr>
+	</table>
+</body>
+</html>
+{% endblock %}

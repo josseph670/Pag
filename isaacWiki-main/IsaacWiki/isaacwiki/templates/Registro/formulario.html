@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% extends 'Registro/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/style_validador.css' %}">
+{% endblock %}
+<title>Formulario con validaciones</title>
+<!-- Incluir los archivos de Bootstrap -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+{% block contenido %}
+<body>
+  <div class="container" id="contenedor">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <!-- Inicio form -->
+        <form method="POST" id="formulario1">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="id_txtNombre">¿Cuál es tu jefe más desafiante en The Binding of Isaac?</label>
+            <input type="text" class="form-control" name="txtJefe" required=""
+              id="id_txtJefe" placeholder="Ingrese el nombre del jefe">
+          </div>
+          <div class="form-group">
+            <label for="id_txtObjeto">¿Cuál es tu objeto activable favorito?</label>
+            <input type="text" class="form-control" name="txtActivable" required=""
+              id="id_txtActivable" placeholder="Ingrese su objeto activable favorito">
+          </div>
+
+          <div class="form-group">
+            <label for="id_txtObjeto">¿Cuál es tu objeto favorito?</label>
+            <input type="text" class="form-control" name="txtObjeto" required=""
+              id="id_txtObjeto" placeholder="Ingrese su objeto favorito">
+          </div>
+
+          <div class="form-group">
+            <label for="personaje_favorito">¿Cuál es tu transformacion favorita del juego?</label>
+            <select class="form-control" id="transformacion_favorita" name="personaje_favorito">
+              <option value=""></option>
+              <option value="BookWorm">BookWorm</option>
+              <option value="Guppy">Guppy</option>
+              <option value="Belzebub">Belzebub</option>
+              <option value="Conjoined">Conjoined</option>
+              <option value="Seraphin"> Seraphin</option>
+              <option value="Leviathan">Leviathan</option>
+              <option value="Yes mother?">Yes mother?</option>
+              <option value="Bob">Bob</option>
+              <option value="Stompy">Stompy</option>
+              <option value="Fun guy">Fun guy</option>
+              <option value="Spun">Spun</option>
+              <option value="Oh crap">Oh crap</option>
+              <option value="Super Bum">Super Bum</option>
+              <option value="AdultHood">AdultHood</option>
+              <option value="Spider Baby">Spider Baby</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>¿Has jugado antes "The Binding of Isaac"?</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jugado_antes" id="si" value="si">
+              <label class="form-check-label" for="si">Sí</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jugado_antes" id="no" value="no">
+              <label class="form-check-label" for="no">No</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="personaje_favorito">¿Cuál es tu personaje favorito del juego?</label>
+            <select class="form-control" id="personaje_favorito" name="personaje_favorito">
+              <option value=""></option>
+              <option value="Isaac">Isaac</option>
+              <option value="Magdalene">Magdalene</option>
+              <option value="Cain">Cain</option>
+              <option value="Judas">Judas</option>
+              <option value="Blue Baby">??? (Blue Baby)</option>
+              <option value="Eve">Eve</option>
+              <option value="Samson">Samson</option>
+              <option value="Azazel">Azazel</option>
+              <option value="Lazarus">Lazarus</option>
+              <option value="Eden">Eden</option>
+              <option value="The Lost">The Lost</option>
+              <option value="Apollyon">Apollyon</option>
+              <option value="The Forgotten">The Forgotten</option>
+              <option value="Bethany">Bethany</option>
+              <option value="Jacob Esau">Jacob  Esau</option>
+            </select>
+          </div>
+          <div class="form-check">
+            <input type="button" class="btn btn-registrarse" id="btn-registrar" value="Registrar">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Hacemos el llamado a los validadores, que estan en la carpeta js  -->
+  <script src="{% static 'js/validador.js' %}"></script>
+</body>
+</html>
+{% endblock %}

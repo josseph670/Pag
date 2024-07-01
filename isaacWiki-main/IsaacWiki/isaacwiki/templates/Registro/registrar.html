@@ -1,0 +1,26 @@
+{% extends 'Registro/base.html' %}
+{% block css%}
+
+{% load static%}
+
+  <link rel="stylesheet" href="{% static 'css/registrar.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% endblock %}
+{% block contenido %}
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+    <div class="content container">
+        <div id="form-container">
+            <h1 class="text-center">Registrar</h1> <!-- Agregamos la clase "text-center" al h1 -->
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="text-center">
+                    <input type="submit" value="Registrar" class="btn btn-success">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,125 @@
+<head>
+<title>Jefes de The Binding of Isaac</title>
+		<!-- Integraciones de Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css%22%3E">
+		
+		{% extends 'Registro/base.html'%}
+		{% load static%} 
+		{% block css%}
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/style_bosses.css' %}">
+		{% endblock %}
+</head>
+
+{% block contenido%}
+<body>
+	<h1>Jefes de The Binding of Isaac</h1>
+	<table>
+		<tr>
+			<th>Jefe</th>
+			<th>Imagen</th>
+			<th>Descripción</th>
+		</tr>
+		<tr>
+			<td>Mom's hearth</td>
+			<td><img src="{% static 'img/bosses/Moms_Heart.png' %}" alt="Mom's" class="img-fluid"></td>
+			<td>Mom's Heart es un jefe introducido en The Binding of Isaac. El Corazón de Mamá es el jefe final de The Womb 2. Al comienzo de la batalla, siempre estará acompañado de dos Ojos.
+                Después de derrotar a El Corazón de Mamá once veces, será reemplazado con It Lives</td>
+        </tr>
+		<tr>
+			<td>Isaac</td>
+			<td><img src="{% static 'img/bosses/Isaac_boss.png' %}" alt="Isaac" class="img-fluid"></td>
+			<td>Isaac es un nuevo Jefe añadido en La ira del Cordero.
+                Él es el personaje principal del juego, como también es el jefe fijo de La Catedral.</td>
+		</tr>
+		<tr>
+			<td>Satan</td>
+			<td><img src="{% static 'img/bosses/Satan1_resize.png' %}" alt="Satan" class="img-fluid"></td>
+			<td>Satanás es el jefe de dos etapas de Sheol, y es uno de los jefes finales del juego. Él fue añadido en la actualización de Halloween.
+                Durante la lucha con Satanás, la música viene acompañada con lo que parece ser un coro de voces gregorianas cantando para que los jugadores entren en espíritu de lucha.</td>
+        </tr>
+        <tr>
+            <td>???</td>
+            <td><img src="{% static 'img/bosses/Boss_Blue_Baby.png' %}" alt="???" class="img-fluid"></td>
+            <td>??? es el jefe de The Chest, al que se accede derrotando a Isaac en la Catedral mientras se tiene The Polaroid.</td>
+        </tr>
+        <tr>
+            <td>The Lamb</td>
+            <td><img src="{% static 'img/bosses/Boss_The_Lamb.png' %}" alt="The Lamb" class="img-fluid"></td>
+            <td>The Lamb es el jefe del chest, al que se accede derrotando a Satan en el Shelo mientras se tiene The Negative. </td>
+        </tr>
+        <tr>
+            <td>Mega Satan</td>
+            <td><img src="{% static 'img/bosses/Boss_Mega_Satan.png' %}"alt="Mega Satan" class="img-fluid"></td>
+            <td>Mega Satan es un jefe introducido en The Binding of Isaac: Rebirth. Se accede portando las 2 piezas de llaves soltadas por los angeles o portando el item Dad's Key.</td>
+        </tr>
+		<tr>
+			<td>Ultra Greed</td>
+			<td><img src="{% static 'img/bosses/Boss_Ultra_Greed.png' %}" alt="Ultra Greed" class="img-fluid"></td>
+			<td>Ultra Greed es el jefe final de Greed Mode. En una versión gigantesca del original Greed, con ataques que son capaces de robar centavos.</td>
+		</tr>
+		<tr>
+			<td>Hush</td>
+			<td><img src="{% static 'img/bosses/Boss_Hush.webp' %}" alt="Hush" class="img-fluid"></td>
+			<td>Hush es un jefe final que solo aparece en Blue Womb en el DLC Afterbirth. Puedes enfrentarte a él si derrotas a It lives antes de llegar a los 30 minutos de partida. Tiene varios tipos de ataques, sus primeras fases son similares a las de ???.</td>
+		</tr>
+		<tr>
+			<td>Delirium</td>
+			<td><img src="{% static 'img/bosses/Boss_Delirium.webp' %}" alt="Delirium" class="img-fluid"></td>
+			<td>Delirium es un jefe final añadido en la expansión Afterbirth+. Él siempre aparece en el último piso The Void como uno de los jefes.</td>
+        </tr>
+        <tr>
+            <td>Mother</td>
+            <td><img src="{% static 'img/bosses/VS_Mother.webp' %}" alt="Mother" class="img-fluid"></td>
+            <td>Mother es un jefe introducido en The Binding of Isaac: Repentance. Es el jefe final de una de las rutas alternativas.</td>
+        </tr>
+		<tr>
+			<td>Dogma</td>
+			<td><img src="{% static 'img/bosses/VS_Dogma.webp' %}" class="img-fluid"></td>
+			<td>Dogma es una criatura de estatica a la cual the enfrentas en el piso Home, fue intriducido en The Binding of Isaac: Repentance.</td>
+		</tr>
+		<tr>
+			<td>The Beast</td>
+			<td><img src="{% static 'img/bosses/Boss_The_Beast_ingame.webp' %}" alt="The Beast" class="img-fluid"></td>
+			<td>The Beast es un jefe introducido en The Binding of Isaac: Repentance.
+                Su enfrentamiento comienza después de derrotar a Dogma.</td>
+		</tr>
+		<tr>
+			<td>Monstro</td>
+			<td><img src="{% static 'img/bosses/Boss_Monstro.webp' %}" alt="Monstro" class="img-fluid"></td>
+			<td>Monstro es el jefe icono de The Binding Of Isaac, se le puede encontrar en los primeros pisos y tiene multiples variaciones.</td>
+		</tr>
+		<tr>
+			<td>Famine</td>
+			<td><img src="{% static 'img/bosses/Famine.webp' %}" alt="Famine" class="img-fluid"></td>
+			<td>Es un jefe que perenece a uno de los cuatro jinetes del apocalipsis, el cual representa la hambruna.</td>
+		</tr>
+		<tr>
+			<td>War</td>
+			<td><img src="{% static 'img/bosses/BC_War.webp' %}" alt="War" class="img-fluid"></td>
+			<td>Es un jefe que perenece a uno de los cuatro jinetes del apocalipsis, el cual representa a la guerra.</td>
+		</tr>
+		<tr>
+			<td>Death</td>
+			<td><img src="{% static 'img/bosses/Death.webp' %}" alt="Death" class="img-fluid"></td>
+			<td>Es un jefe que perenece a uno de los cuatro jinetes del apocalipsis, el cual representa a la muerte.</td>
+		</tr>
+		<tr>
+			<td>Pestilence</td>
+			<td><img src="{% static 'img/bosses/Pestilence.webp' %}" alt="Pestilence" class="img-fluid"></td>
+			<td>Es un jefe que perenece a uno de los cuatro jinetes del apocalipsis, el cual representa la pestilencia.</td>
+		</tr>
+		<tr>
+			<td>Conquest</td>
+			<td><img src="{% static 'img/bosses/BC_Conquest.webp' %}" alt="Conquest" class="img-fluid"></td>
+			<td>Es un jefe que perenece a uno de los cuatro jinetes del apocalipsis, el cual representa la conquista.</td>
+		</tr>
+        <tr>
+			<td>Larry Jr.</td>
+			<td><img src="{% static 'img/bosses/Larry.webp' %}" alt="Larry Jr." class="img-fluid"></td>
+			<td>Larry Jr. puede ser encontrado en los primeros pisos como el jefe del piso, pero también es común encontrarlo como monstruo común en siguiente pisos.</td>
+		</tr>
+	</table>
+</body>
+</html>
+{% endblock %}

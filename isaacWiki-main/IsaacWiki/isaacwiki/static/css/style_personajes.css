@@ -1,0 +1,51 @@
+h1 {
+  font-family: 'baguette script', cursive;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left; /* Alineación a la izquierda */
+  }
+
+  tr {
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left; /* Alineación a la izquierda */
+  }
+
+  td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .contenedor-imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+}
